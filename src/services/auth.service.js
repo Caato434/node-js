@@ -11,7 +11,7 @@ const login = (email, password) => {
         throw new ApiError(status.UNAUTHORIZED, "email or password does not exist");
     }
     //create token
-    let token = jwt.sign({ user }, process.env.JWT_SECRET_KEY, { expiresIn: '1m' });
+    let token = jwt.sign({ user }, process.env.JWT_SECRET_KEY, { expiresIn: '10m' });
 
     return { token };
 }
