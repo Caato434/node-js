@@ -29,7 +29,7 @@ const getUserById = (id) => {
 
 
 const createUser = (user) => {
-    logger.info('create user');
+    logger.info('create user is working');
     let newUser = userModel.create(user);
     return newUser;
 };
@@ -40,7 +40,7 @@ const updateUser = (id) => {
 };
 
 const deleteUser = (id) => {
-    logger.info('delete user');
+    logger.info('delete user working');
     return userModel.deleteUser(id);
 };
 

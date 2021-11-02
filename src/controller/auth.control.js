@@ -3,9 +3,9 @@ const status = require('http-status');
 const logger = require('../config/logger');
 const { ApiResponse } = require('../payload/ApiResponse');
 const { authService } = require('../services')
-    //export the controller
+    // i have exported the controller
 exports.login = (req, res) => {
-    logger.info("info login control is working");
+    logger.info("info  is working");
     let email = req.body.email;
     let password = req.body.password;
     let loginResponse = authService.login(email, password);
