@@ -31,4 +31,4 @@ async function checkfunction() {
     }
 }
 
-module.exports = { checkfunction, getConnection }
+module.exports = { checkfunction }
